@@ -7,12 +7,13 @@ import (
 	"strings"
 )
 
-func String2Lines(s string) (lines []string, err error) {
+func String2Lines(s string) ([]string, error) {
 	scanner := bufio.NewScanner(strings.NewReader(s))
+	var lines []string
 	for scanner.Scan() {
 		lines = append(lines, scanner.Text())
 	}
-	err = scanner.Err()
+	err := scanner.Err()
 
 	return lines, err
 }
