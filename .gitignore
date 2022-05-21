@@ -1,0 +1,8 @@
+# ignore executable file
+/finder
+
+# ignore the sensitive config
+configs/db.go
+
+# ignore desktop services store
+.DS_Store

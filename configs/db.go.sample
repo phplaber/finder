@@ -1,0 +1,6 @@
+package configs
+
+const (
+	DriverName     = "mysql"
+	DataSourceName = "username:password@protocol(address)/dbname?param=value"
+)
